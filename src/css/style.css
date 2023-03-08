@@ -1,0 +1,99 @@
+/* #region backbone */
+body {
+    position: relative;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    color: black;
+}
+/* #endregion */
+
+/* #region base */
+.container {
+    max-width: 1320px;
+}
+/* #endregion */
+
+/* #region nav */
+.nav {
+    z-index: 50;
+    position: fixed;
+    width: 100%;
+    padding: 18px 0;
+}
+
+.nav .container {
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #242527;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 40px;
+
+    font-size: 18px;
+    color: #242527;
+}
+
+.nav__menu-item {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav__menu-item:hover {
+    transform: scale(1.05);
+    text-decoration-line: underline;
+    color: #406af6;
+}
+
+.nav__sign {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__sign-item {
+    width: 106px;
+    height: 45px;
+    font-size: 18px;
+    color: #242527;
+    border-radius: 32px;
+    border-width: 1px;
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav__sign-item:hover {
+    background: #406af6;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+/* #endregion */
+
+/* #region */
+/* #endregion */
+
+/* #region */
+/* #endregion */
+
+/* #region */
+/* #endregion */
+
+/* #region */
+/* #endregion */
+
+/* #region */
+/* #endregion */
