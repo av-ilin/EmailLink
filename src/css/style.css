@@ -9,7 +9,25 @@ body {
 
 /* #region base */
 .container {
-    max-width: 1320px;
+    margin: 0 auto;
+    max-width: 1218px;
+    padding: 0 15px;
+}
+
+.button {
+    font-weight: 400;
+    color: #242527;
+    border-radius: 32px;
+    border-width: 1px;
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+    background-color: #406af6;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #ffffff;
 }
 /* #endregion */
 
@@ -22,8 +40,8 @@ body {
 }
 
 .nav .container {
+    max-width: 1320px;
     height: 60px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,18 +86,81 @@ body {
     width: 106px;
     height: 45px;
     font-size: 18px;
-    color: #242527;
-    border-radius: 32px;
-    border-width: 1px;
-    background-color: transparent;
-    transition: all 0.4s ease-in-out;
 }
 
-.nav__sign-item:hover {
-    background: #406af6;
+/* #endregion */
+
+/* #region header*/
+.header .container {
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__greet {
+    max-width: 399px;
+}
+
+.header__greet-title {
+    margin-bottom: 24px;
+
     font-weight: 500;
+    font-size: 55px;
+    line-height: 67px;
+    letter-spacing: -0.02em;
+    color: #242527;
+}
+
+.header__greet-text {
+    font-size: 18px;
+    line-height: 25px;
+    color: #79797c;
+}
+
+.header__email-wrap {
+    max-width: 592px;
+    max-height: 475px;
+    background: #f7f7f8;
+}
+
+.header__email {
+    max-width: 527px;
+    padding: 115px 33px;
+    text-align: center;
+}
+
+.header__email-info:first-child {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 130%;
     letter-spacing: -0.01em;
-    color: #ffffff;
+    color: #242527;
+}
+
+.header__email-info:first-child a {
+    color: #406af6;
+}
+
+.header__email-info:nth-child(2) {
+    font-size: 14px;
+    line-height: 150%;
+    color: #79797c;
+    max-width: 361px;
+    margin: 12px auto 40px;
+}
+
+.header__email-info:last-child {
+    font-size: 12px;
+    line-height: 150%;
+    color: #98989b;
+}
+
+.header__email-but {
+    width: 187px;
+    height: 54px;
+    margin-bottom: 16px;
 }
 /* #endregion */
 
@@ -94,6 +175,23 @@ body {
 
 /* #region */
 /* #endregion */
+@media (max-width: 1130px) {
+    .nav__menu {
+        display: none;
+    }
+    .nav__sign {
+        display: none;
+    }
+}
 
-/* #region */
-/* #endregion */
+@media (max-width: 1024px) {
+    .header {
+        padding-top: 50px;
+    }
+    .header .container {
+        justify-content: center;
+    }
+    .header__greet {
+        text-align: center;
+    }
+}
